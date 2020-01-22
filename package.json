@@ -1,0 +1,22 @@
+{
+  "name": "pemt",
+  "version": "1.0.0",
+  "description": "A math terminal written in python and electron",
+  "main": "main.js",
+  "scripts": {
+    "test": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mart547n/PEMT.git"
+  },
+  "author": "Martin Sig Nørbjerg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mart547n/PEMT/issues"
+  },
+  "homepage": "https://github.com/Mart547n/PEMT#readme",
+  "devDependencies": {
+    "electron": "^7.1.9"
+  }
+}
