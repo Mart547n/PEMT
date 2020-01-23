@@ -1,7 +1,7 @@
 const { app, BrowserWindow } = require('electron')
 
 // Keep a global reference of the window object, if you don't, the window will
-// be closed automatically when the JavaScript object is garbage collected.
+// be close-btnd automatically when the JavaScript object is garbage collected.
 let win
 
 function createWindow () {
@@ -9,10 +9,12 @@ function createWindow () {
   win = new BrowserWindow({
     width: 600,
     height: 360,
+    frame: false,
     webPreferences: {
       nodeIntegration: true
     },
   })
+
   // Keeps the window ontop of the other windows
   win.setAlwaysOnTop(true);
 
@@ -23,10 +25,10 @@ function createWindow () {
   win.loadFile('index.html')
 
   // Open the DevTools.
-  win.webContents.openDevTools()
+  // win.webContents.openDevTools()
 
-  // Emitted when the window is closed.
-  win.on('closed', () => {
+  // Emitted when the window is close-btnd.
+  win.on('close-btnd', () => {
     // Dereference the window object, usually you would store windows
     // in an array if your app supports multi windows, this is the time
     // when you should delete the corresponding element.
@@ -39,8 +41,8 @@ function createWindow () {
 // Some APIs can only be used after this event occurs.
 app.on('ready', createWindow)
 
-// Quit when all windows are closed.
-app.on('window-all-closed', () => {
+// Quit when all windows are close-btnd.
+app.on('window-all-close-btnd', () => {
   // On macOS it is common for applications and their menu bar
   // to stay active until the user quits explicitly with Cmd + Q
   if (process.platform !== 'darwin') {

@@ -1,16 +1,58 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>Hello World!</title>
     <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <link rel="stylesheet" href="static/style.css">
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <!-- This should contain the main part of the application -->
-    We are using node <script>document.write(process.versions.node)</script>,
-    Chrome <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
-  </body>
+</head>
+
+<body>
+    <div class="header">
+        <div class="title">
+            <p><strong>PEMT:</strong> Math Termial. </p>
+        </div>
+        <!-- Closing and min-btn buttons -->
+        <div class="buttons">
+            <button id="min-btn"></button>
+            <button id="max-btn"></button>
+            <button id="close-btn"></button>
+        </div>
+    </div>
+
+    <div class="terminal">
+        <h1>Hello World!</h1>
+        <!-- This should contain the main part of the application -->
+        We are using node <script>
+            document.write(process.versions.node)
+        </script>,
+        Chrome <script>
+            document.write(process.versions.chrome)
+        </script>,
+        and Electron <script>
+            document.write(process.versions.electron)
+        </script>.
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam vel quia error, neque explicabo assumenda
+            maiores impedit quo asperiores, numquam tempora, dolore laborum ipsum harum recusandae facere corporis
+            deserunt? Provident!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, vero! Dignissimos, rerum itaque animi
+            aliquam similique a excepturi? Similique dolorum enim vero mollitia nesciunt reiciendis eligendi fuga
+            recusandae libero temporibus!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quis sit, blanditiis accusantium soluta,
+            libero rerum facere fugiat laboriosam omnis eius repellendus, eaque error. Consequatur eius dolores illum
+            delectus quis?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, ullam esse aut delectus dolorum iste
+            dolore nesciunt, quidem, laboriosam dolor animi. Quas laborum culpa consequatur expedita commodi vero, ipsam
+            aliquam.
+        </p>
+    </div>
+    <div class="input">
+        <input type="text" id="inputField">
+    </div>
+</body>
+<script src="source/events.js"></script>
+
 </html>

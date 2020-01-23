@@ -1,0 +1,114 @@
+.header {
+    color: #e5e9f0;
+    font-size: medium;
+    text-align: center;
+    height: 24px;
+    padding-bottom: 0px;
+    border-bottom: 1px solid #e5e9f0;
+    width: 100%;
+}
+
+.title {
+    float: left;
+    align-content: center;
+    -webkit-app-region: drag;
+    width: 70%;
+}
+
+.buttons {
+    float: right;
+    width: 100px;
+}
+
+button {
+    position: absolute;
+    margin: 0px 4px;
+    border-radius: 50%;
+    padding: 8px;
+    border: none;
+}
+
+button:focus {
+    outline-width: 0px;
+}
+
+#close-btn {
+    background-color: #ec5f67;
+    right: 10px;
+}
+
+#min-btn {
+    background-color: #fac863;
+    right: 36px;
+}
+
+#max-btn {
+    background-color: #66df78;
+    right: 66px;
+}
+
+.terminal {
+    height: 190px;
+    padding-bottom: 60px;
+    overflow-y: scroll;
+    float: left;
+}
+
+p.terminal {
+    height: 250%;
+}
+
+/* Scroll bar stuff */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #e5e9f0;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #ccc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #999;
+}
+
+.input {
+    position: absolute;
+    border-top: 1px solid #e5e9f0;
+    height: 60px;
+    bottom: 0px;
+    width: 98%;
+    text-align: center;
+}
+
+input:focus {
+    outline-width: 0;
+}
+
+input {
+    width: 98%;
+    height: 40px;
+    padding: 12px, 20px;
+    margin-left: 8px;
+    color: #e5e9f0;
+    background: #2e3441;
+    font-size: 14px;
+    border: none;
+}
+
+p {
+    margin-top: 0px;
+    float: left
+}
+
+body {
+    background-color: #2e3441;
+    color: #e5e9f0;
+    font-family: 'Gill Sans MT', 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
+}
