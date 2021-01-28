@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/Mart547n/PEMT#readme",
   "devDependencies": {
-    "electron": "^7.1.9"
+    "electron": "^9.4.0"
   }
 }
